@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>RGB Hexadecimal</h1>
+
+    <table>
+        <tr>
+            <td>(R) Vermelho:</td>
+            <td>
+            <input type="range" class="ranges" min="0" max="255" value="255" id="rangeRed" />
+            </td>
+            <td><input type="text" class="inputValue" disabled id="valueRed" value="255"></td>
+        </tr>
+        <tr>
+            <td>(G) Verde:</td>
+            <td>
+                <input type="range" class="ranges" min="0" max="255" value="255" id="rangeGreen" />
+            </td>
+            <td><input type="text" class="inputValue" disabled id="valueGreen" value="255"></td>
+        </tr>
+        <tr>
+            <td>(B) Azul:</td>
+            <td>
+            <input type="range" class="ranges" min="0" max="255" value="255" id="rangeBlue" />
+            </td>
+            <td><input type="text" class="inputValue" disabled id="valueBlue" value="255"></td>
+        </tr>
+    </table>
+
+    <div id="targetColor"></div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

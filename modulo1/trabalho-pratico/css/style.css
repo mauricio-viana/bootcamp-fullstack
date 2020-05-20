@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+table{
+    align-content: center;
+    margin: auto;
+}
+
+.inputValue{
+    width: 60px;
+}
+
+#targetColor{
+    width: 160px;
+    height: 160px; 
+    border: solid 1px;
+    border-color: rgb(240, 240 , 240);
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    margin: auto;
+}
