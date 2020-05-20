@@ -4,7 +4,7 @@ Introdução ao JavaScript. Integração do JavaScript com o HTML e CSS. JavaScr
 ## Trabalho prático
 **Enunciado:** Construa, utilizando HTML, CSS e JavaScript puro, uma aplicação para a visualização de cores a partir da escala RGB.
 
-![rgb](https://i.imgur.com/Uf8x4uG.gif)
+![rgb](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo1/rgb.gif)
 
 ### Bibliotecas e tecnologias utilizadas
 - JavaScript.
