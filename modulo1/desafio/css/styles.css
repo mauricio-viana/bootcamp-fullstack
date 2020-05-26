@@ -1,11 +1,21 @@
 body {
-  padding: 10px;
+  padding: 0 50px 0 50px;
+}
+
+h1 {
+  text-align: center;
 }
 
 #loading {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+  text-align: center;
+}
+
+#loading-message {
+  display: inline-block;
+}
+
+.field-search {
+  padding-bottom: 20px;
 }
 
 img {
@@ -31,4 +41,14 @@ img {
   border: 1px solid gray;
   border-radius: 10px;
   margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.message {
+  font-size: 13px;
+  margin: 20px 0 0;
 }
