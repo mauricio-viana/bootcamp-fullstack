@@ -22,6 +22,8 @@ window.addEventListener('load', () => {
 
   setTimeout(() => {
     document.querySelector('#loading').innerHTML = '';
+    inputName.value = '';
+    inputName.focus();
   }, 1500);
 });
 
@@ -137,9 +139,4 @@ function updateTities(searchUsers) {
   }
   summaryUsers.textContent = `${searchUsers} usuário(s) encontrado(s)`;
   summaryEstatistic.textContent = 'Estatísticas';
-}
-
-function clearInuput() {
-  inputName.value = '';
-  inputName.focus();
 }
