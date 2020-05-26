@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equipe="X-UA-Compatible" content="ie-edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Filtro usuários</title>
+  </head>
+  <body>
+    <h1>Pesquisa de usuários</h1>
+
+    <span id="loading">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5>Aguarde...</h>
+      </div>
+    </span>
+
+    <div>
+      <input id="inputName" type="text" placeholder="Buscar">
+      <a class="waves-effect waves-light btn-small disabled" id="buttonSeach" >Buscar</a>
+    </div>
+    <div class="users-container">
+      <div class="container" >
+        <h3 id="summaryUsers">Nenhum usuário filtrado</h5>
+        <div id="tabUsers"></div>
+      </div>
+      <div class="container">
+        <h3 id="summaryEstatistic">Nada a ser exibido</h5>
+        <div id="tabEstatistic"></div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
