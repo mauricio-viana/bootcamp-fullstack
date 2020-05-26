@@ -13,39 +13,49 @@
     <title>Filtro usuários</title>
   </head>
   <body>
-    <h1>Pesquisa de usuários</h1>
-
-    <span id="loading">
-      <div class="preloader-wrapper active">
-        <div class="spinner-layer spinner-blue-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
+    <header>
+      <h1>Pesquisa de usuários</h1>
+      <div id="loading">
+        <div class="preloader-wrapper active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
           </div>
         </div>
+        <div id="loading-message">
+          <h5>Aguarde...</h>
+        </div>
       </div>
-      <div>
-        <h5>Aguarde...</h>
+    </header>
+    <main>
+      <div class="field-search">
+        <div class="input-field col s6">
+          <input id="inputName" type="text" class="validate">
+          <label for="inputName">Busca</label>
+        </div>
+        <a class="waves-effect waves-light btn-small disabled" id="buttonSeach" >Buscar</a>
       </div>
-    </span>
-
-    <div>
-      <input id="inputName" type="text" placeholder="Buscar">
-      <a class="waves-effect waves-light btn-small disabled" id="buttonSeach" >Buscar</a>
-    </div>
-    <div class="users-container">
-      <div class="container" >
-        <h3 id="summaryUsers">Nenhum usuário filtrado</h5>
-        <div id="tabUsers"></div>
+      <div class="users-container">
+        <div class="container" >
+          <h3 id="summaryUsers">Nenhum usuário filtrado</h5>
+          <div id="tabUsers"></div>
+        </div>
+        <div class="container">
+          <h3 id="summaryEstatistic">Nada a ser exibido</h5>
+          <div id="tabEstatistic"></div>
+        </div>
       </div>
-      <div class="container">
-        <h3 id="summaryEstatistic">Nada a ser exibido</h5>
-        <div id="tabEstatistic"></div>
-      </div>
-    </div>
+    </main>
+		<footer>
+			<p class="message">By Mauricio Viana - 2020</p>
+		</footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
