@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
   activeInput();
 
   setTimeout(() => {
-    document.querySelector('#loading').innerHTML = '';
+    document.querySelector('#loading').classList.add('hide');
     inputName.value = '';
     inputName.focus();
   }, 1500);
@@ -111,12 +111,12 @@ function filterUsers(searchName) {
       const { name, picture, age, gender } = user;
       const userHMTL = `
     <div class="user">
-    <div>
-    <img src="${picture}" alt="${name}"/>
-    </div>
-    <div>
-    ${name} , ${age} anos
-    </div>
+      <div>
+        <img src="${picture}" alt="${name}"/>
+      </div>
+      <div>
+        ${name} , ${age} anos
+      </div>
     </div>  
     `;
       usersHTML += userHMTL;
