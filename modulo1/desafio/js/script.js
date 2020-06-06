@@ -108,7 +108,7 @@ function filterUsers(searchName) {
   totalUsersFilter
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((user) => {
-      const { name, picture, age, gender } = user;
+      const { name, picture, age } = user;
       const userHMTL = `
     <div class="user">
       <div>
