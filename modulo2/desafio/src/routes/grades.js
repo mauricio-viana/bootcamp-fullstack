@@ -5,13 +5,38 @@ const routes = express.Router();
 const { readFile, writeFile } = promises;
 const gradesFile = 'grades.json';
 
-routes.post('/saveGrade', async (req, res) => {
+function indexExist(grades, paramId) {
+  let index = grades.findIndex((grade) => grade.id === parseInt(paramId, 10));
+  return index;
+}
+
+function defaultObject(body) {
+  let { student, subject, type, value } = body;
+  if (!student) student = '';
+  if (!subject) subject = '';
+  if (!type) type = '';
+  if (!value) value = 0;
+
+  return { student: student, subject: subject, type: type, value: value };
+}
+
+routes.post('/save', async (req, res) => {
   try {
-    let grade = req.body;
+    let grade = defaultObject(req.body);
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
 
-    grade = { id: json.nextId++, ...grade, timestamp: new Date() };
+    if (grade.value < 0 || grade.value > 50)
+      return res
+        .status(400)
+        .send({ error: 'Invalid value provided. (property: value)' });
+
+    grade = {
+      id: json.nextId++,
+      ...grade,
+      timestamp: new Date(),
+    };
+
     json.grades.push(grade);
 
     await writeFile(gradesFile, JSON.stringify(json));
@@ -26,18 +51,20 @@ routes.put('/:id', async (req, res) => {
   try {
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
-    const indexExist = json.grades.findIndex(
-      (student) => student.id === parseInt(req.params.id, 10)
-    );
+    const index = indexExist(json.grades, req.params.id);
 
-    if (indexExist < 0) throw new Error('student not found');
+    if (index < 0) return res.status(404).send({ error: 'grade not found' });
+    if (req.body.value < 0 || req.body.value > 50)
+      return res
+        .status(400)
+        .send({ error: 'Invalid value provided. (property: value)' });
 
-    const { id, timestamp } = json.grades[indexExist];
-    json.grades[indexExist] = { id, ...req.body, timestamp };
+    const { id, timestamp } = json.grades[index];
+    json.grades[index] = { id, ...req.body, timestamp };
 
     await writeFile(gradesFile, JSON.stringify(json));
 
-    return res.json(json.grades[indexExist]);
+    return res.json(json.grades[index]);
   } catch (error) {
     return res.send(error.message);
   }
@@ -47,6 +74,10 @@ routes.delete('/:id', async (req, res) => {
   try {
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
+
+    const index = indexExist(json.grades, req.params.id);
+    if (index < 0) return res.status(404).send({ error: 'grade not found' });
+
     const grades = json.grades.filter(
       (student) => student.id !== parseInt(req.params.id)
     );
@@ -54,7 +85,7 @@ routes.delete('/:id', async (req, res) => {
 
     await writeFile(gradesFile, JSON.stringify(json));
 
-    return res.json(json);
+    return res.end();
   } catch (error) {
     return res.send(error.message);
   }
@@ -68,13 +99,15 @@ routes.get('/:id', async (req, res) => {
       (student) => student.id === parseInt(req.params.id, 10)
     );
 
+    if (!grade) return res.status(404).send({ error: 'grade not found' });
+
     return res.json(grade);
   } catch (error) {
     return res.send(error.message);
   }
 });
 
-routes.get('/total-grade/:student/:subject', async (req, res) => {
+routes.get('/total/:student/:subject', async (req, res) => {
   try {
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
@@ -93,7 +126,7 @@ routes.get('/total-grade/:student/:subject', async (req, res) => {
   }
 });
 
-routes.get('/average-topics/:subject/:type', async (req, res) => {
+routes.get('/average/:subject/:type', async (req, res) => {
   try {
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
@@ -106,13 +139,13 @@ routes.get('/average-topics/:subject/:type', async (req, res) => {
       return accumulator + current.value;
     }, 0);
 
-    return res.json({ total: allSubjectType / grades.length });
+    return res.json({ average: allSubjectType / grades.length });
   } catch (error) {
     return res.send(error.message);
   }
 });
 
-routes.get('/three-firsts/:subject/:type', async (req, res) => {
+routes.get('/firts/:subject/:type', async (req, res) => {
   try {
     const data = await readFile(gradesFile, 'utf8');
     const json = JSON.parse(data);
