@@ -1,0 +1,17 @@
+{
+  "name": "grades-control-api",
+  "version": "1.0.0",
+  "description": "Desafio módulo 2 API grades-control-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --experimental-modules src/index.js"
+  },
+  "author": "Mauricio Viana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "type": "module"
+}
