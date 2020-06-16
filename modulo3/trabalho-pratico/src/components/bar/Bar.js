@@ -7,7 +7,6 @@ export default class Bar extends Component {
     return (
       <div
         style={{
-          marginTop: '10px',
           width: value + '%',
           height: '35px',
           backgroundColor: color,

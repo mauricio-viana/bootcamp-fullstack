@@ -4,7 +4,7 @@ export default class InputRead extends Component {
   render() {
     const { value, label, id, color } = this.props;
     return (
-      <div className="input-field col s12 m6 l3">
+      <div className="input-field col s6">
         <input
           type="text"
           id={id}

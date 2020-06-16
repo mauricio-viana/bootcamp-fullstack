@@ -5,6 +5,7 @@ import InputReadOnly from './components/inputs/InputReadOnly';
 import Bar from './components/bar/Bar';
 import css from './components/bar/bar.module.css';
 import { formatMoney, formatPercentage } from './helpers/_formatHelpers';
+import PierChart from './components/piechart/PierChart';
 
 export default class App extends Component {
   constructor() {
@@ -48,41 +49,47 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1 className="center-align">React Salário</h1>
-        <div className="row">
-          <InputFullSalary
-            value={fullSalary}
-            onChangeSalary={this.handleChangeSalary}
-          />
+        <h1 className="center-align">React Salary</h1>
 
-          <InputReadOnly
-            id="1"
-            value={formatMoney(baseINSS)}
-            label="Base INSS"
-          />
-          <InputReadOnly
-            id="2"
-            value={this.readResults(discountINSS, bar1)}
-            label="Desconto INSS"
-            color="#e67e22"
-          />
-          <InputReadOnly
-            id="3"
-            value={formatMoney(baseIRPF)}
-            label="Base IRPF"
-          />
-          <InputReadOnly
-            id="4"
-            value={this.readResults(discountIRPF, bar2)}
-            label="Desconto INSS"
-            color="#c0392b"
-          />
-          <InputReadOnly
-            id="5"
-            value={this.readResults(netSalary, bar3)}
-            label="Salário Líquido"
-            color="#16a085"
-          />
+        <div className="row">
+          <div className="col s5 push-7">
+            <InputFullSalary
+              value={fullSalary}
+              onChangeSalary={this.handleChangeSalary}
+            />
+
+            <InputReadOnly
+              id="1"
+              value={formatMoney(baseINSS)}
+              label="Base INSS"
+            />
+            <InputReadOnly
+              id="2"
+              value={this.readResults(discountINSS, bar1)}
+              label="Desconto INSS"
+              color="#e67e22"
+            />
+            <InputReadOnly
+              id="3"
+              value={formatMoney(baseIRPF)}
+              label="Base IRPF"
+            />
+            <InputReadOnly
+              id="4"
+              value={this.readResults(discountIRPF, bar2)}
+              label="Desconto INSS"
+              color="#c0392b"
+            />
+            <InputReadOnly
+              id="5"
+              value={this.readResults(netSalary, bar3)}
+              label="Salário Líquido"
+              color="#16a085"
+            />
+          </div>
+          <div className="col s6">
+            <PierChart bar1={bar1} bar2={bar2} bar3={bar3} />
+          </div>
         </div>
 
         <div className={css.bar}>
