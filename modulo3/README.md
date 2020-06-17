@@ -1,6 +1,6 @@
 # FrontEnd com React
 
-Introdução ao React – JSX, Componentes de Funções, Componentes de Classe, State, Props, Binding e Interpolação. Comunicação entre componentes acompanhando o ciclo de vida de componentes de classe. Introdução às requisições HTTP com React. Roteamento com react-router e ntrodução ao Ionic React.
+Introdução ao React – JSX, componentes de funções, componentes de classe, state, props, binding e interpolação. Comunicação entre componentes acompanhando todo o ciclo de vida de um componentes de classe. Introdução às requisições HTTP com React. Roteamento com react-router e introdução ao Ionic React.
 
 ## Trabalho prático
 
