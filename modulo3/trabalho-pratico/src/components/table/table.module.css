@@ -1,0 +1,12 @@
+.tableHome {
+  border-color: lightgray;
+}
+
+.cellsHead {
+  background: #e2dfdf;
+  border-radius: 0;
+}
+
+.cells {
+  padding: 4px 15px;
+}

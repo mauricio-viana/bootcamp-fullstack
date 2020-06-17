@@ -6,6 +6,7 @@ import Bar from './components/bar/Bar';
 import css from './components/bar/bar.module.css';
 import { formatMoney, formatPercentage } from './helpers/_formatHelpers';
 import PierChart from './components/piechart/PierChart';
+import DivSection from './components/section/DivSection';
 
 export default class App extends Component {
   constructor() {
@@ -49,7 +50,9 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1 className="center-align">React Salary</h1>
+        <h1 className="center-align">React Salário</h1>
+
+        <DivSection />
 
         <div className="row">
           <div className="col s5 push-7">
