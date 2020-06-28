@@ -39,6 +39,8 @@ Introdução ao React – JSX, componentes de funções, componentes de classe, 
 
 _Desafio: Criar uma aplicação com React para realizar cálculo de valorização/depreciação com base em um montante, taxa de juros mensal e quantidade de parcelas mensal, utilizando o conceito de juros composto._
 
+![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo3/images/create-react-app.gif?raw=true)
+
 ## 🚀 Persistência de dados, versionamento de código e implantação
 
 Conteúdo em consctrução 🚧 👷
