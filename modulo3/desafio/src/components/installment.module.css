@@ -1,0 +1,32 @@
+.flexCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.flexCard span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 35px;
+  height: 72px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.77);
+  color: white;
+}
+
+.dataDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  height: 72px;
+  border-radius: 0 8px 8px 0;
+  padding-left: 10px;
+  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.77);
+}
