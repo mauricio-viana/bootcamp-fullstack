@@ -4,7 +4,7 @@ export default function Inputs(props) {
   const { id, label, value, onChangeChangeInput, min, max, step } = props;
 
   const handleChangeInput = (event) => {
-    onChangeChangeInput(+event.target.value);
+    onChangeChangeInput(Number(event.target.value));
   };
 
   return (
