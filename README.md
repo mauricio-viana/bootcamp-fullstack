@@ -1,4 +1,4 @@
-# Bootcamp Fullstack
+# Bootcamp Fullstack (Conteúdo em consctrução 🚧 👷)
 
 [![](https://img.shields.io/badge/made_by-mauricio--viana-brightgreen)](https://www.linkedin.com/in/mauricio-viana/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mauricio-viana/bootcamp-fullstack)
@@ -41,6 +41,11 @@ _Desafio: Criar uma aplicação com React para realizar cálculo de valorizaçã
 
 ![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo3/images/create-react-app.gif?raw=true)
 
-## 🚀 Persistência de dados, versionamento de código e implantação
+## 🚀 [Persistência de dados, versionamento de código e implantação](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo4)
 
-Conteúdo em consctrução 🚧 👷
+Introdução ao MongoDB. Utilização do serviço mLab. Integrando a API ao MongoDB no
+mLab.
+Introdução ao Git. Instalação do git. Principais comandos do Git.
+Como publicar aplicações no Github. Introdução ao Heroku. Instalação do Heroku CLI e como implantar aplicações no Heroku.
+
+_Desafio: Desenvolver um modelo de dados a ser utilizado na estrutura de uma API e publicar a aplicação pelo Heroku (Front e Back)_
