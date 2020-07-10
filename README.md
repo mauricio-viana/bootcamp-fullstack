@@ -1,4 +1,4 @@
-# Bootcamp Fullstack (Conteúdo em consctrução 🚧 👷)
+# Bootcamp Fullstack (Conteúdo em construção 🚧 👷)
 
 [![](https://img.shields.io/badge/made_by-mauricio--viana-brightgreen)](https://www.linkedin.com/in/mauricio-viana/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mauricio-viana/bootcamp-fullstack)
@@ -13,6 +13,7 @@ Bootcamp Fullsctack e uma formação online oferecida pelo Instituto de Gestão 
 - [NodeJs](https://nodejs.org/)
 - [ReactJs](https://reactjs.org/)
 - [MongoDB](https://www.mongodb.com/)
+- [MongoDB Atlas](https://www.mongodb.com/)
 - [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
 - [Heroku](https://www.heroku.com/)
@@ -23,7 +24,7 @@ Introdução ao JavaScript. Integração do JavaScript com o HTML e CSS. JavaScr
 
 _Desafio: Criar uma aplicação para filtrar usuários e mostrar estatísticas a partir do filtro definido._
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/raw/master/modulo1/desafio-m1.gif)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/desafio-m1_SejbeyCA5.gif)
 
 ## 🚀 [Módulo 2 - Desenvolvimento de API’s](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo2)
 
@@ -31,17 +32,17 @@ Introdução ao desenvolvimento com Node. js. Introdução ao framework Express 
 
 _Desafio: Desenvolver uma API chamada “grades-control-api” para controlar notas de alunos em matérias de um curso._
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo2/images/grades-control.gif?raw=true)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/grades-control_rLys0FyVL.gif)
 
-## 🚀 [FrontEnd com React](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo3)
+## 🚀 [Módulo 3 - FrontEnd com React](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo3)
 
 Introdução ao React – JSX, componentes de funções, componentes de classe, state, props, binding e interpolação. Comunicação entre componentes acompanhando todo o ciclo de vida de um componentes de classe. Introdução às requisições HTTP com React. Roteamento com react-router e introdução ao Ionic React.
 
 _Desafio: Criar uma aplicação com React para realizar cálculo de valorização/depreciação com base em um montante, taxa de juros mensal e quantidade de parcelas mensal, utilizando o conceito de juros composto._
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo3/images/create-react-app.gif?raw=true)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/create-react-app_TDUVJNQLK.gif)
 
-## 🚀 [Persistência de dados, versionamento de código e implantação](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo4)
+## 🚀 [Módulo 4 - Persistência de dados, versionamento de código e implantação](https://github.com/mauricio-viana/bootcamp-fullstack/tree/master/modulo4)
 
 Introdução ao MongoDB. Utilização do serviço mLab. Integrando a API ao MongoDB no
 mLab.
@@ -49,3 +50,11 @@ Introdução ao Git. Instalação do git. Principais comandos do Git.
 Como publicar aplicações no Github. Introdução ao Heroku. Instalação do Heroku CLI e como implantar aplicações no Heroku.
 
 _Desafio: Desenvolver um modelo de dados a ser utilizado na estrutura de uma API e publicar a aplicação pelo Heroku (Front e Back)_
+
+[Backend](https://github.com/mauricio-viana/grades-api) e [Fontend](https://github.com/mauricio-viana/grades-app) da aplicação.
+
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/grades-app_9ydkVKUFm.gif)
+
+## ⭐️ Desafio final
+
+Desenvolver uma aplicação web para Controle Financeiro Pessoal com MongoDB + Node.js + React.js e implantação no Heroku.
