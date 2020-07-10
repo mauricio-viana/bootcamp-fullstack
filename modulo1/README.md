@@ -9,18 +9,16 @@ Introdução ao JavaScript. Integração do JavaScript com o HTML e CSS. JavaScr
 - Carga para aplicação, através da api [randomuser.me](https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo 'randomuser.me')
 - Estilização com api css [materialize](https://materializecss.com 'materialize')
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo1/desafio-m1.gif)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/desafio-m1_SejbeyCA5.gif)
 
 ## Trabalho prático
 
-**Enunciado:** Construa, utilizando HTML, CSS e JavaScript puro, uma aplicação para a visualização de cores a partir da escala RGB.
+**Enunciado:** Construido, utilizando HTML, CSS e JavaScript puro, uma aplicação para a visualização de cores a partir da escala RGB.
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo1/rbg.gif)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/rbg_j2bB_TCgv.gif)
 
 ### Bibliotecas e tecnologias utilizadas
 
 - JavaScript.
 - HTML.
 - CSS.
-- Live-server.
-- Visual Studio Code (VSCode).

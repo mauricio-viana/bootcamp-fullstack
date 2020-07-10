@@ -6,14 +6,15 @@ Introdução ao React – JSX, componentes de funções, componentes de classe, 
 
 **Enunciado:** Criar uma aplicação com React para realizar cálculo de valorização/depreciação com base em um montante, taxa de juros mensal e quantidade de parcelas mensal, utilizando o conceito de juros composto.
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo3/images/create-react-app.gif?raw=true)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/create-react-app_TDUVJNQLK.gif)
 
 ## Trabalho prático
 
 **Enunciado:** Construído uma aplicação utilizando React, para calcular o salário líquido a partir do salário bruto, considerando as regras da CLT de 2020.
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo3/images/react-salary.gif?raw=true)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/react-salary_ycutanPYO.gif)
 
 ### Bibliotecas e tecnologias utilizadas
 
-- [ReactJS](https://reactjs.org/)
+- [NodeJs](https://nodejs.org/en/about/)
+- [ReactJs](https://reactjs.org/)

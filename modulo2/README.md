@@ -8,7 +8,7 @@ Introdução ao desenvolvimento com Node. js. Introdução ao framework Express 
 
 A API foi documentada utilizando [editor swagger](http://editor.swagger.io/)
 
-![](https://github.com/mauricio-viana/bootcamp-fullstack/blob/master/modulo2/images/grades-control.gif?raw=true)
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/grades-control_rLys0FyVL.gif)
 
 ## Trabalho prático
 
