@@ -14,7 +14,7 @@ export const accountsRouter = (app) => {
   app.post('/accounts/transfer', controller.transfer);
 
   app
-    .route('/accounts/:agency/:account')
+    .route('/accounts/:agency/:number')
     .get(controller.findOne)
     .delete(controller.remove);
 

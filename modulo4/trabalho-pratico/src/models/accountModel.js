@@ -5,7 +5,7 @@ const accountSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  account: {
+  number: {
     type: Number,
     required: true,
   },
