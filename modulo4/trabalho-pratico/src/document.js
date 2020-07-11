@@ -506,6 +506,52 @@ export const document = {
         },
       },
     },
+    '/accounts/privateAccounts': {
+      post: {
+        tags: ['accounts'],
+        summary: 'Private customers',
+        description:
+          'The clients with the highest balance at each branch are transferred to a special branch',
+        produces: ['application/json'],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              type: 'object',
+              properties: {
+                agency: {
+                  type: 'integer',
+                  format: 'int64',
+                },
+                number: {
+                  type: 'integer',
+                  format: 'int64',
+                },
+                name: {
+                  type: 'string',
+                },
+                balance: {
+                  type: 'number',
+                  format: 'double',
+                  minimum: 0,
+                },
+              },
+            },
+          },
+          '500': {
+            description: 'Error occurred',
+            schema: {
+              type: 'object',
+              properties: {
+                error: {
+                  type: 'string',
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
   definitions: {
     account: {
