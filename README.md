@@ -1,4 +1,4 @@
-# Bootcamp Fullstack (Conteúdo em construção 🚧 👷)
+# Bootcamp Fullstack
 
 [![](https://img.shields.io/badge/made_by-mauricio--viana-brightgreen)](https://www.linkedin.com/in/mauricio-viana/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mauricio-viana/bootcamp-fullstack)
@@ -55,6 +55,15 @@ _Desafio: Desenvolver um modelo de dados a ser utilizado na estrutura de uma API
 
 ![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/grades-app_9ydkVKUFm.gif)
 
-## ⭐️ Desafio final
+## ⭐️ [Desafio final](https://github.com/mauricio-viana/finapp)
 
 Desenvolver uma aplicação web para Controle Financeiro Pessoal com MongoDB + Node.js + React.js e implantação no Heroku.
+
+![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/app-finapp_bq8S1njs5.gif)
+
+## Autor
+
+👤 **Mauricio Viana**
+
+- Linkedin: @mauricio-viana
+- Github: @mauricio-viana
