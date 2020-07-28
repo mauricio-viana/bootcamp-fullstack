@@ -18,6 +18,9 @@ como implantar aplicações no Heroku.
 
 **Enunciado:** Desenvolvido uma API integrada ao MongoDB Atlas cujo o schema dos dados definido pelo mongoose.
 
+<h1>
+<img src="https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/my-bank-api-m4_WqGjp2kaZ.png" alt="trabalho" width="600px" />
+</h1>
 ![](https://ik.imagekit.io/0hmjtnwyvn/bootcamp-igti/my-bank-api-m4_WqGjp2kaZ.png)
 
 ### Bibliotecas e tecnologias utilizadas
