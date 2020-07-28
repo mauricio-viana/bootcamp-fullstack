@@ -65,5 +65,5 @@ Desenvolver uma aplicação web para Controle Financeiro Pessoal com MongoDB + N
 
 👤 **Mauricio Viana**
 
-- Linkedin: @mauricio-viana
-- Github: @mauricio-viana
+- Linkedin: [@mauricio-viana](https://www.linkedin.com/in/mauricio-viana)
+- Github: [@mauricio-viana](https://github.com/mauricio-viana)
